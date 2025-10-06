@@ -15,6 +15,11 @@ class Program
         T2.Start();
 
         Console.WriteLine("Tasca 2");
+
+        nouThread.Join(); // Espera que el thread nouThread acabi
+        T1.Join(); // Espera que el thread T1 acabi
+        T2.Join(); // Espera que el thread T2 acabi
+        Console.WriteLine("Final del programa");
     }
 
     public static void EscriureA()

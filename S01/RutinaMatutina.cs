@@ -19,7 +19,7 @@ public class RutinaMatutina
         dutxarThread.Join(); // Espera que el thread dutxarThread acabi abans de continuar
         vestirThread.Start();
         vestirThread.Join(); // Espera que el thread vestirThread acabi abans de continuar
-        musicaThread.Join(); // Espera que el thread musicaThread acabi abans de continuar
+        musicaThread.Join(); Console.WriteLine("He deixat d'escoltar música"); // Espera que el thread musicaThread acabi abans de continuar
         esmorzarThread.Start();
         esmorzarThread.Join(); // Espera que el thread esmorzarThread acabi abans de continuar
 
